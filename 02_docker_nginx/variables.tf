@@ -1,5 +1,5 @@
 ﻿variable "external_port" {
   type        = number
-  description = "Port hôte exposé par Nginx"
+  description = "Port hote expose par Nginx"
   default     = 8080
 }
