@@ -10,7 +10,6 @@ output "container_id" {
   description = "ID du conteneur Nginx"
 }
 
-# URL pratique pour tester
 output "nginx_url" {
   value       = "http://localhost:${var.external_port}"
   description = "URL locale d'accès à Nginx"
