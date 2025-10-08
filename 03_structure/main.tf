@@ -16,7 +16,7 @@ resource "docker_image" "nginx" {
 }
 
 resource "docker_container" "nginx" {
-  name  = "nginx-struct"         # <-- différent de l'exo 2
+  name  = "nginx-struct"         
   image = docker_image.nginx.image_id
 
   ports {
