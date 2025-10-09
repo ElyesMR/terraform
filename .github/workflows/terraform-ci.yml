@@ -1,0 +1,12 @@
+﻿name: terraform-ci
+on: [push, pull_request]
+jobs:
+  fmt-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
+        with: { terraform_version: 1.6.0 }
+      - run: terraform -chdir=02_docker_nginx init -backend=false
+      - run: terraform -chdir=02_docker_nginx fmt -check
+      - run: terraform -chdir=02_docker_nginx validate
