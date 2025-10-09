@@ -1,0 +1,6 @@
+﻿.terraform/
+terraform.tfstate
+terraform.tfstate.*
+*.tfvars
+
+02_docker_nginx/outputs.json
