@@ -4,3 +4,9 @@ terraform.tfstate.*
 *.tfvars
 
 02_docker_nginx/outputs.json
+# fichiers volumineux à ne pas versionner
+*.box
+*.iso
+.terraform/
+*.tfstate
+*.tfstate.*
